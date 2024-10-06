@@ -1,21 +1,21 @@
 module.exports.config = {
-  name: "albam",
-  version: "1.0.3",
-  permssion: 0,
-  credits: "★𝐌𝟗𝐇𝟒𝐌𝐌𝟒𝐃-𝐁𝟒𝐃𝟗𝐋★",
-  prefix:true,
+  name: "album",
+  version: "0.0.3",
+  permission: 0,
+  prefix: 'awto',
+  credits: "Nayan",
   description: "Random video",
-  category: "short video",
+  category: "user",
+  usages: "",
   cooldowns: 5,
-  dependencies: {
-    axios: ""
-  }
-}, module.exports.run = async function({
+};
+
+module.exports.run = async function({
   event: e,
   api: a,
   args: n
 }) {
-  if (!n[0]) return a.sendMessage("•—»✨「 𝐕𝐈𝐃𝐄𝐎 」✨«—•\n•┄┅════❁🌺❁════┅┄•\n𝟏. 𝐈𝐒𝐋𝐀𝐌𝐈𝐊 𝐕𝐈𝐃𝐄𝐎🌺✨ \n𝟐. 𝐋𝐎𝐕𝐄 𝐕𝐈𝐃𝐄𝐎 🤗😌\n𝟑.𝐒𝐔𝐑𝐀 𝐕𝐈𝐃𝐄𝐎 💫\n𝟒. 𝐒𝐓𝐀𝐓𝐔𝐒 𝐕𝐈𝐃𝐄𝐎💌\n𝟓. 𝐒𝐓𝐎𝐑𝐘 𝐕𝐈𝐃𝐄𝐎 😻😊\n𝟔.𝐒𝐀𝐃 𝐕𝐈𝐃𝐄𝐎 🥹💙\n𝟕. 𝐀𝐋𝐎𝐍 𝐕𝐈𝐃𝐄𝐎 🙂💔\n𝟖. 𝐍𝐀𝐓𝐔𝐑𝐀𝐋 𝐕𝐈𝐃𝐄𝐎 🌿🕊️\n𝟗.𝐒𝐎𝐍𝐆 𝐒𝐓𝐎𝐑𝐘 𝐕𝐈𝐃𝐄𝐎 🖤🥀 \n𝟏𝟎.𝐈𝐒𝐋𝐀𝐌𝐈𝐂𝐊 𝐙𝐎𝐎𝐍✨🧡 \n𝟏𝟏.𝐗𝐌𝐋 𝐁𝐀𝐁𝐘 𝐕𝐈𝐃𝐄𝐎💜💛 \n𝟏𝟐.𝐂𝐔𝐓𝐄 𝐂𝐀𝐓 𝐕𝐈𝐃𝐄𝐎🙀😻\n𝟏𝟑.𝐖𝐎𝐑𝐋𝐃 𝐕𝐈𝐃𝐄𝐎🌍\n𝟏𝟒.𝐂𝐀𝐑𝐓𝐎𝐎𝐍 𝐕𝐈𝐃𝐄𝐎 🐻\n𝟏𝟓.𝐀𝐍𝐈𝐌𝐄 𝐕𝐈𝐃𝐄𝐎 🤡☠️\n\n•┄┅════❁🌺❁════┅┄•\n\nTell me how many video numbers you want to see by replaying this message", e.threadID, ((a, n) => {
+  if (!n[0]) return a.sendMessage("╭──────•𝚁𝙰𝙹𝙰 𝙿𝚁𝙾𝙹𝙴𝙲𝚃•──────╮\n\n☢━━━━━━💛𝙰𝙻𝙱𝚄𝙼 𝚅𝙸𝙳𝙴𝙾💛━━━━━━☢ \n!\n!➤1 𝙸𝚂𝙻𝙰𝙼 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤2 𝙰𝙽𝙸𝙼𝙴 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤3 𝚂𝙷𝙰𝙸𝚁𝙸 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤4 𝚂𝙷𝙾𝚁𝚃 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤5 𝚂𝙰𝙳𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤6 𝚂𝚃𝙰𝚃𝚄𝚂 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤7 𝙵𝙾𝙾𝚃𝙱𝙰𝙻𝙻 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤8 𝙵𝚄𝙽𝙽𝚈 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤9 𝙻𝙾𝚅𝙴 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤10 𝙲𝙿𝙻 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤11 𝙱𝙰𝙱𝚈 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤12 𝙵𝚁𝙴𝙴 𝙵𝙸𝚁𝙴 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤13 𝙻𝙾𝙵𝙸 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤14 𝙷𝙰𝙿𝙿𝚈 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤15 𝙷𝚄𝙼𝙰𝙸𝚈𝚄𝙽 𝚂𝙸𝚁 𝚅𝙸𝙳𝙴𝙾◄┈╯\n☢━━━━━━💚𝙷𝙾𝚃 𝚅𝙸𝙳𝙴𝙾━━━━━━☢\n!➤16 𝚂𝙴𝚇 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤17 𝙷𝙾𝚁𝙽𝚈 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤18 𝙸𝚃𝙴𝙼 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤19 𝙷𝙾𝚃 𝚅𝙸𝙳𝙴𝙾◄┈╯\n!\n!➤20 𝙲𝙰𝙿𝙲𝚄𝚃 𝚅𝙸𝙳𝙴𝙾◄┈╯\n━━━━━━━━━━━━━━━━━━━━━\n𝙾𝚆𝙽𝙴𝚁:𝚁𝙰𝙹𝙰 𝙰𝙷𝙼𝙴𝙳\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n𝙰 𝙿 𝙸//𝚁𝙰𝙹𝙰\n━━━━━━━━━━━━━━━━━━━━━\n╰──────•𝚁𝙰𝙹𝙰 𝙿𝚁𝙾𝙹𝙴𝙲𝚃•──────╯\n\nTell me how many video numbers you want to see by replaying this message", e.threadID, ((a, n) => {
     global.client.handleReply.push({
       name: this.config.name,
       messageID: n.messageID,
@@ -23,7 +23,9 @@ module.exports.config = {
       type: "create"
     })
   }), e.messageID)
-}, module.exports.handleReply = async ({
+}; 
+
+module.exports.handleReply = async ({
   api: e,
   event: a,
   client: n,
@@ -32,53 +34,50 @@ module.exports.config = {
   Users: i,
   Threads: o
 }) => {
-  var { p, h } = linkanh();
-
+  var { p, h } = await linkanh(a.body);
+  const axios = require("axios");
   if ("create" === t.type) {
-    const n = (await p.get(h)).data.data;
-    let t = (await p.get(n, {
+    const response = await p.get(h);
+    const data = response.data.data;
+    const cap = response.data.shaon;
+    const cn = response.data.count;
+    let nayan = (await p.get(data, {
       responseType: "stream"
     })).data;
     return e.sendMessage({
-      body: "𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐈𝐍𝐆 𝐘𝐎𝐔 𝐕𝐈𝐃𝐄𝐎 \n𝐅𝐑𝐎𝐌\n\n｢𝐁𝟒𝐃𝟗𝐋-𝐁𝟗𝐓___//𝟎𝟎𝟕｣",
-      attachment: t
+      body: `🟡${cap}\n𝚃𝙾𝚃𝙰𝙻 𝚅𝙸𝙳𝙴𝙾:${cn}\n𝙰 𝙿 𝙸  𝐑𝘈𝘑𝘈 卝 চৌধুরী📛`,
+      attachment: nayan
     }, a.threadID, a.messageID)
   }
-
-    function linkanh() {
-        const p = require("axios");
-        if ("1" == a.body)
-            var h = "https://islamick-video-api.replit.app/video/islamck";
-        else if ("2" == a.body)
-         var   h = "https://islamick-cyber-chat-api-sagocol333.replit.app/vdremix";
-        else if ("3" == a.body)
-         var   h = "https://islamick-video-api.replit.app/video/sura";
-        else if ("4" == a.body)
-          var  h = "https://islamick-cyber-chat-api-sagocol333.replit.app/vdtrai";
-        else if ("5" == a.body)
-          var  h = "https://api.xaikoimran.repl.co/video/story";
-        else if ("6" == a.body)
-          var  h = "https://api.xaikoimran.repl.co/video/sad";
-        else if ("7" == a.body)
-          var  h = "https://api.xaikoimran.repl.co/video/alon";
-        else if ("8" == a.body)
-          var  h = "https://api.xaikoimran.repl.co/video/natural";
-        else if ("9" == a.body)
-         var   h = "https://api.xaikoimran.repl.co/video/storysong";
-        else if ("10" == a.body)
-         var  h = "https://api.xaikoimran.repl.co/video/time";
-         else if ("11" == a.body)
-         var  h = "https://api.xaikoimran.repl.co/video/baby";
-         else if ("12" == a.body)
-         var  h = "https://rajib-api.islam500.repl.co/vdtrai";
-         else if ("13" == a.body)
-         var  h = "https://api.xaikoimran.repl.co/video/word";
-         else if ("14" == a.body)
-         var  h =
-"https://api.xaikoimran.repl.co/video/cartoon";
-           else if ("15" == a.body)
-         var  h =
-"https://videos-api--xaikoimran.repl.co/video/anime";
-        return { p, h };
-    }
 };
+
+async function linkanh(choice) {
+  const axios = require("axios");
+  const apis = await axios.get('https://raw.githubusercontent.com/shaonproject/Shaon/main/api.json');
+  const n = apis.data.api
+  const options = {
+    "1": "/video/islam",
+    "2": "/video/anime",
+    "3": "/video/shairi",
+    "4": "/video/short",
+    "5": "/video/sad",
+    "6": "/video/status",
+    "7": "/video/football",
+    "8": "/video/funny",
+    "9": "/video/love",
+    "10": "/video/cpl",
+    "11": "/video/baby",
+    "12": "/video/kosto",
+    "13": "/video/lofi",
+    "14": "/video/happy",
+    "15": "/video/humaiyun",
+    "16": "/video/sex",
+    "17": "/video/horny",
+    "18": "/video/item",
+    "19": "/video/hot",
+    "20": "/video/capcut",
+    
+  };
+  const h = `${n}${options[choice]}`;
+  return { p: axios, h };
+}
