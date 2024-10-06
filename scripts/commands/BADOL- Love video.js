@@ -20,7 +20,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-   var hi = ["...!!😍😽💖\n\n\n [RAJA 卝 চৌধুরী] তুমি আমার কল্পনায় জড়িয়ে থাকা এক অদ্ভুত মায়া.!!🌸❤️‍🩹\n\n\n...!!😍😽💖"];
+   var hi = ["...!!😍😽💖\n\n\n RAJA 卝 চৌধুরী তুমি আমার কল্পনায় জড়িয়ে থাকা এক অদ্ভুত মায়া.!!🌸❤️‍🩹\n\n\n...!!😍😽💖"];
   var know = hi[Math.floor(Math.random() * hi.length)];
   var link =[
 
