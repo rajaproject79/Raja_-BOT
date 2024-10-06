@@ -1,3 +1,119 @@
-remove for all text add your fb appstate
-
-bot owner Mohammad Badol Chowdhury 
+[
+    {
+        "key": "dbln",
+        "value": "%7B%22100013678366954%22%3A%22qZbU77Fo%22%2C%22100088847116551%22%3A%22ZC5ta2rc%22%7D",
+        "domain": "facebook.com",
+        "path": "/login/device-based/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.209Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    },
+    {
+        "key": "datr",
+        "value": "HwvrZvcYsKfUhdGVmMSVqN3Y",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.218Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    },
+    {
+        "key": "sb",
+        "value": "HwvrZlPEdM_TBlEVXQ7BxmCV",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.218Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    },
+    {
+        "key": "ps_l",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.218Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    },
+    {
+        "key": "ps_n",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.218Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    },
+    {
+        "key": "vpd",
+        "value": "v1%3B832x424x1.445365309715271",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.218Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    },
+    {
+        "key": "wd",
+        "value": "499x979",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.218Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    },
+    {
+        "key": "c_user",
+        "value": "100013678366954",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.218Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    },
+    {
+        "key": "fr",
+        "value": "0xPfsyiMFGbBzxS09.AWX0LFJCJmCy1st5eRizQgR2PAE.Bm6wsf..AAA.0.0.BnAp9H.AWXRGCPWZsg",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.218Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    },
+    {
+        "key": "xs",
+        "value": "1%3Ahc0uTwQ-eUxU2g%3A2%3A1728225095%3A-1%3A5278",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.218Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    },
+    {
+        "key": "locale",
+        "value": "en_GB",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.218Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    },
+    {
+        "key": "fbl_st",
+        "value": "101625548%3BT%3A28803758",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.218Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    },
+    {
+        "key": "wl_cbv",
+        "value": "v2%3Bclient_version%3A2635%3Btimestamp%3A1728225520",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-10-06T14:43:12.218Z",
+        "lastAccessed": "2024-10-06T14:43:12.218Z"
+    }
+]
