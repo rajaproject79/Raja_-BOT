@@ -1,60 +1,58 @@
-
-module.exports = {
-  config: {
+const axios = require('axios'); 
+module.exports.config={
   name: "ai",
-  version: "1.0.0",
-  permission: 0,
-  credits: "Nayan",
-  description: "",
-  prefix: true, 
-  category: "user", 
-  usages: "query",
-  cooldowns: 5,
-  dependencies: {
-    "nayan-server": ''
-  }
-  },
-
-  start: async function({ nayan, events, args, Users }) {
-
-    const axios = require("axios")
-    const request = require("request")
-    const fs = require("fs-extra")
-  const uid = events.senderID;
-  var nn = await Users.getNameUser(uid);
-  let np = args.join("ai");
-  const { gpt } = require("nayan-server");
-
-gpt({
-    messages: [
-        {
-            role: "assistant",
-            content: "Hello! How are you today?"
-        },
-        {
-            role: "user",
-            content: `Hello, my name is ${nn}.`
-        },
-        {
-            role: "assitant",
-            content: `Hello, ${nn}! How are you today?`
-        }
-    ],
-    prompt: `${np}`,
-    model: "GPT-4",
-    markdown: false
-}, (err, data) => {
-    console.log(data)
-  const answer = data.gpt
-    var msg = [];
-    {
-        msg += `${answer}`
+  version: "1.6.9",
+  author: "♡ Nazrul ♡",
+  role: 0,
+  category: "ai",
+  Description: "Google ai",
+  guide: {
+      en: "   {pn} your question"
     }
-    return nayan.reply({
-        body: msg
-
-    }, events.threadID, events.messageID);
-  });
-
+}
+module.exports.onStart = async ({api,event,args,Reply,message}) =>{ 
+  const A1R1N = args.join(" ")
+  if (!A1R1N) {
+        return api.sendMessage("Please Provide a Prompt!", event.threadID, event.messageID);
+      };
+  try {
+    const res = await axios.get(`https://www.x-noobs-apis.000.pe/hercai?ask=${encodeURIComponent(A1R1N)}`);
+    const nazrulMsg = res.data.answer
+    const airin = `
+\n${nazrulMsg}`;
+      api.sendMessage(airin, event.threadID, (error, info) => {
+  global.GoatBot.onReply.set(info.messageID, {
+            commandName: this.config.name,
+            type: "reply",
+            messageID: info.messageID,
+            author: event.senderID,
+            msg: airin,
+        });
+    }, event.messageID);
+  } catch (error) {
+    api.sendMessage(error, message,event.threadID, event.messageID)
   }
-};
+}
+
+module.exports.onReply = async({api,event,args,Reply}) =>{
+       const AIRIN = args.join(" ") 
+ try {
+     const res = await axios.get(`https://www.x-noobs-apis.000.pe/hercai?ask=${encodeURIComponent(AIRIN)}`);
+    const nazrulMsg = res.data.answer
+    const airins = `
+\n${nazrulMsg}`;
+      api.sendMessage(airins, event.threadID, (error, info) => {
+  global.GoatBot.onReply.set(info.messageID, {
+            commandName: this.config.name,
+            type: "reply",
+            messageID: info.messageID,
+            author: event.senderID,
+            msg: airins,
+        });
+    }, event.messageID);
+    
+  } catch (error) {
+      api.sendMessage(error, message,event.threadID, event.messageID)
+    
+  }
+                      }
