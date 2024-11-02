@@ -2,7 +2,7 @@ module.exports.config = {
   name: "flag",
   version: "1.0.0",
   permssion: 0,
-  credits: "★𝐌𝟗𝐇𝟒𝐌𝐌𝟒𝐃-𝐁𝟒𝐃𝟗𝐋★",
+  credits: "RAJA 卝 চৌধুরী",
   prefix:true,
   description: "View flag img ",
   category: "flag",
