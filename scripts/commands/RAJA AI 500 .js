@@ -22,7 +22,7 @@ module.exports = {
     const fs = require("fs-extra")
   const uid = events.senderID;
   var nn = await Users.getNameUser(uid);
-  let np = args.join(" ");
+  let np = args.join("ai");
   const { gpt } = require("nayan-server");
 
 gpt({
