@@ -1,58 +1,60 @@
 const axios = require('axios'); 
-module.exports.config={
+module.exports.config = {
   name: "ai",
   version: "1.6.9",
-  author: "♡ Nazrul ♡",
-  role: 0,
+  credits: "♡ Nazrul ♡",
+  hasPermission: 0,
   category: "ai",
-  Description: "Google ai",
-  guide: {
-      en: "   {pn} your question"
-    }
-}
-module.exports.onStart = async ({api,event,args,Reply,message}) =>{ 
-  const A1R1N = args.join(" ")
-  if (!A1R1N) {
-        return api.sendMessage("Please Provide a Prompt!", event.threadID, event.messageID);
-      };
-  try {
-    const res = await axios.get(`https://www.x-noobs-apis.000.pe/hercai?ask=${encodeURIComponent(A1R1N)}`);
-    const nazrulMsg = res.data.answer
-    const airin = `
-\n${nazrulMsg}`;
-      api.sendMessage(airin, event.threadID, (error, info) => {
-  global.GoatBot.onReply.set(info.messageID, {
-            commandName: this.config.name,
-            type: "reply",
-            messageID: info.messageID,
-            author: event.senderID,
-            msg: airin,
-        });
-    }, event.messageID);
-  } catch (error) {
-    api.sendMessage(error, message,event.threadID, event.messageID)
-  }
+  usePrefix: true,
+  Description: "talk with ai assistant",
+  usages:  "{pn} your question"
 }
 
-module.exports.onReply = async({api,event,args,Reply}) =>{
-       const AIRIN = args.join(" ") 
- try {
-     const res = await axios.get(`https://www.x-noobs-apis.000.pe/hercai?ask=${encodeURIComponent(AIRIN)}`);
-    const nazrulMsg = res.data.answer
-    const airins = `
-\n${nazrulMsg}`;
-      api.sendMessage(airins, event.threadID, (error, info) => {
-  global.GoatBot.onReply.set(info.messageID, {
-            commandName: this.config.name,
-            type: "reply",
-            messageID: info.messageID,
-            author: event.senderID,
-            msg: airins,
-        });
-    }, event.messageID);
-    
-  } catch (error) {
-      api.sendMessage(error, message,event.threadID, event.messageID)
-    
+module.exports💞.run = async ({ api, event, args, handleReply }) => { 
+  const prompt = args.join(" ");
+  if (!prompt) {
+    return api.sendMessage("Please Provide a Prompt!", event.threadID, event.messageID);
   }
-                      }
+  
+  try {
+    const res = await axios.get(`https://www.x-noobs-apis.000.pe/hercai?ask=${encodeURIComponent(prompt)}`);
+    const replyMessage = res.data.answer;
+    
+    api.sendMessage(replyMessage, event.threadID, (error, info) => {
+      if (error) return api.sendMessage("An error occurred!", event.threadID, event.messageID);
+      
+      global.cilent.handleReply.push(info.messageID, {
+        name: this.config.name,
+        type: "reply",
+        messageID: info.messageID,
+        author: event.senderID,
+        msg: replyMessage,
+      });
+    }, event.messageID);
+  } catch (err) {
+    api.sendMessage(`Error: ${err.message}`, event.threadID, event.messageID);
+  }
+}
+module.exports.handleReply = async ({ api, event, args, handleReply }) => {
+  const xPrompt = args.join(" ");
+  if (!xPrompt) return;
+  
+  try {
+    const res = await axios.get(`https://www.x-noobs-apis.000.pe/hercai?ask=${encodeURIComponent(xPrompt)}`);
+    const xReplay = res.data.answer;
+    
+    api.sendMessage(xReplay, event.threadID, (error, info) => {
+      if (error) return api.sendMessage("An error occurred!", event.threadID, event.messageID);
+      
+      global.cilent.handleReply.push(info.messageID, {
+        name: this.config.name,
+        type: "reply",
+        messageID: info.messageID,
+        author: event.senderID,
+        msg: xReplay,
+      });
+    }, event.messageID);
+  } catch (err) {
+    api.sendMessage(`Error: ${err.message}`, event.threadID, event.messageID);
+  }
+}
