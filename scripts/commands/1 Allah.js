@@ -31,6 +31,6 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.imgur.com/LvUF38x.gif",
 "https://i.imgur.com/2eewmJm.gif",
   ];
-    var callback = () => api.sendMessage({body:`•—»✨ [ 𝗔𝗹𝗹𝗮𝗵 𝗚𝗜𝗙 ] ✨«—•\n•┄┅════❁🌺❁════┅┄•\n\n\n✿┼─𝐁𝟒𝐃𝟗𝐋-𝐁𝟗𝐓___//𝟎𝟎𝟕┼─✿ \n\n\n•┄┅════❁🌺❁════┅┄•`,attachment: fs.createReadStream(__dirname + "/cache/5.gif")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.gif")); 
+    var callback = () => api.sendMessage({body:`•—»✨ [ 𝗔𝗹𝗹𝗮𝗵 𝗚𝗜𝗙 ] ✨«—•\n•┄┅════❁🌺❁════┅┄•\n\n\n✿RAJA 卝 চৌধুরী✿ \n\n\n•┄┅════❁🌺❁════┅┄•`,attachment: fs.createReadStream(__dirname + "/cache/5.gif")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.gif")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.gif")).on("close",() => callback());
    }; 
