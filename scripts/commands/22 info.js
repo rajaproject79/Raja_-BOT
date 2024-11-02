@@ -24,24 +24,20 @@ const time = process.uptime(),
     seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Manila").format("『D/MM/YYYY』 【hh:mm:ss】");
-var link = ["https://i.imgur.com/Yi0QXnn.jpeg", 
+var link = ["https://i.imgur.com/H6QCV6I.jpeg",
 
-            "https://i.imgur.com/Yi0QXnn.jpeg", 
-
-            "https://i.imgur.com/Yi0QXnn.jpeg",
-
-            "https://i.imgur.com/Yi0QXnn.jpeg"];
+      "https://i.imgur.com/H6QCV6I.jpeg"];
 
 var callback = () => api.sendMessage({body:`•—»✨𝐀𝐝𝐦𝐢𝐧 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧✨🌺
  •┄┅════❁🌺❁════┅┄•
 
-𝐁𝐨𝐭 𝐍𝐚𝐦𝐞 : 𝐁𝟒𝐃𝟗𝐋-𝐁𝟗𝐓___//𝟎𝟎𝟕
+𝐁𝐨𝐭 𝐍𝐚𝐦𝐞 : RAJA 卝 চৌধুরী
 
 𝐁𝐨𝐭 𝐀𝐝𝐦𝐢𝐧 : 𝐀d𝐦𝐢𝐧 𝐜𝐨𝐧𝐭𝐫𝐨𝐥 𝐓𝐡𝐢𝐬 𝐑𝐨𝐛𝐨𝐭
 
 •┄┅══❁CONCATET❁══┅┄• 
 
-𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐏𝐚𝐠𝐞 : https://m.me/MBC.K1NG.007
+𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐏𝐚𝐠𝐞 : m.me/RAJAMIM09638357510
 
 •┄┅═══❁🌺❁═══┅┄•\n🌺✨𝐎𝐭𝐡𝐞𝐫𝐬 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧✨🌺\n •┄┅═══❁🌺❁═══┅┄•
 
