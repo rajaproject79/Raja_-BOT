@@ -10,7 +10,7 @@ module.exports.config = {
   usages:  "{pn} your question"
 }
 
-module.exports💞.run = async ({ api, event, args, handleReply }) => { 
+module.exports.run = async ({ api, event, args, handleReply }) => { 
   const prompt = args.join(" ");
   if (!prompt) {
     return api.sendMessage("Please Provide a Prompt!", event.threadID, event.messageID);
