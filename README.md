@@ -1,8 +1,8 @@
-<p align="center"><a href="https://m.me/MBC.K1NG.007" target="_blank" rel="noopener noreferrer">
-  <img src="https://i.imgur.com/rB8e26W.jpeg" width="50" style="margin-right: 10px;"></a>
+<p align="center"><a href="https://www.facebook.com/RajaFarjan01882913768" target="_blank" rel="noopener noreferrer">
+  <img src="https://i.imgur.com/EkmNZ6I.jpeg" width="50" style="margin-right: 10px;"></a>
 </p>
 <h5 align="center">
-🔹MOHAMMAD BADOL CHOWDHURY
+🔹MOHAMMAD RAJA CHOWDHURY
 
 
 - [📝 **Note**](#-note)
@@ -23,13 +23,13 @@
 BOT-OWNER-CONTEG"
 
  FACEBOK
-https://www.facebook.com/MBC.K1NG.007"
+https://www.facebook.com/RajaFarjan01882913768"
 
 FACEBOK
-https://m.me/MBC.K1NG.007"
+https://www.facebook.com/RajaFarjan01882913768"
 
 MESSENGER
-m.me/100001381266797"
+m.me/RAJAMIM09638357510"
 
 WHATSAPP
 wa.me/+8801715559179"
@@ -44,11 +44,11 @@ wa.me/+8801715559179"
 
 # RAJA-BOT-PACK-SUPPER-ROBOT REAL OWNER RAJA CHOWDHURY
 
-# Everyone run this BADOL-BOT-007 for fun
+# Everyone run this RAJA-BOT-007 for fun
 
 # If there is any error, I will fix it by knocking on Facebook
 
-# https://m.me/MBC.K1NG.007
+# https://www.facebook.com/RajaFarjan01882913768
 
 # I hope you enjoy
 
