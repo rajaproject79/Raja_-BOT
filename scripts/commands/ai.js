@@ -1,60 +1,59 @@
-const axios = require('axios'); 
-module.exports.config = {
-  name: "Ai",
-  version: "1.6.9",
-  credits: "♡ Nazrul ♡",
-  hasPermission: 0,
-  category: "Ai",
-  usePrefix: true,
-  Description: "talk with ai assistant",
-  usages:  "{pn} your question"
-}
+module.exports = {
+  config: {
+    name: "ai",
+    version: "1.0.0",
+    permission: 0,
+    credits: "Nayan",
+    description: "",
+    prefix: true,
+    category: "user",
+    usages: "query",
+    cooldowns: 5,
+    dependencies: {
+      "nayan-server": ""
+    }
+  },
 
-module.exports.run = async ({ api, event, args, handleReply }) => { 
-  const prompt = args.join(" ");
-  if (!prompt) {
-    return api.sendMessage("Please Provide a Prompt!", event.threadID, event.messageID);
-  }
-  
-  try {
-    const res = await axios.get(`https://www.x-noobs-apis.000.pe/hercai?ask=${encodeURIComponent(prompt)}`);
-    const replyMessage = res.data.answer;
-    
-    api.sendMessage(replyMessage, event.threadID, (error, info) => {
-      if (error) return api.sendMessage("An error occurred!", event.threadID, event.messageID);
-      
-      global.cilent.handleReply.push(info.messageID, {
-        name: this.config.name,
-        type: "reply",
-        messageID: info.messageID,
-        author: event.senderID,
-        msg: replyMessage,
+  start: async function({ nayan, events, args, Users, NAYAN }) {
+    const axios = require("axios");
+    const request = require("request");
+    const fs = require("fs-extra");
+    const id = nayan.getCurrentUserID()
+    const uid = events.senderID;
+    const nn = await Users.getNameUser(uid);
+    const np = args.join(" ");
+    const { gpt } = require("nayan-server");
+
+    try {
+      gpt({
+        messages: [
+          {
+            role: "assistant",
+            content: "Hello! How are you today?"
+          },
+          {
+            role: "user",
+            content: `Hello, my name is ${nn}.`
+          },
+          {
+            role: "assistant",
+            content: `Hello, ${nn}! How are you today?`
+          }
+        ],
+        prompt: `${np}`,
+        model: "GPT-4",
+        markdown: false
+      }, async (err, data) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+console.log(data)
+        const answer = data.gpt;
+        await NAYAN.sendContact(answer, id, events.threadID);
       });
-    }, event.messageID);
-  } catch (err) {
-    api.sendMessage(`Error: ${err.message}`, event.threadID, event.messageID);
+    } catch (error) {
+      console.error("Error while processing GPT request:", error);
+    }
   }
-}
-module.exports.handleReply = async ({ api, event, args, handleReply }) => {
-  const xPrompt = args.join(" ");
-  if (!xPrompt) return;
-  
-  try {
-    const res = await axios.get(`https://www.x-noobs-apis.000.pe/hercai?ask=${encodeURIComponent(xPrompt)}`);
-    const xReplay = res.data.answer;
-    
-    api.sendMessage(xReplay, event.threadID, (error, info) => {
-      if (error) return api.sendMessage("An error occurred!", event.threadID, event.messageID);
-      
-      global.cilent.handleReply.push(info.messageID, {
-        name: this.config.name,
-        type: "reply",
-        messageID: info.messageID,
-        author: event.senderID,
-        msg: xReplay,
-      });
-    }, event.messageID);
-  } catch (err) {
-    api.sendMessage(`Error: ${err.message}`, event.threadID, event.messageID);
-  }
-      }
+};
