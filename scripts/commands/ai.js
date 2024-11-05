@@ -1,10 +1,10 @@
 const axios = require('axios'); 
 module.exports.config = {
-  name: "ai",
+  name: "Ai",
   version: "1.6.9",
   credits: "♡ Nazrul ♡",
   hasPermission: 0,
-  category: "ai",
+  category: "Ai",
   usePrefix: true,
   Description: "talk with ai assistant",
   usages:  "{pn} your question"
