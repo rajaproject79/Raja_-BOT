@@ -17,12 +17,7 @@ module.exports.run = async function({ api, event, args, Users }) {
     const prompt = args.join(" ");
     var id = event.senderID;
     var name = await Users.getNameUser(event.senderID);
-    var tl = ["⋆✦⋆⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⋆✦⋆
-আমার নাম Mim  
-আমাকে ব্যবহার করতে চাইলে 
-Mim লেখে কিছু জিজ্ঞাসা করুন 
-যেমন Mim Ki Koro 
-⋆✦⋆⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⋆✦⋆",];
+    var tl = ["⋆✦⋆⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⋆✦⋆\nআমার নাম Mim আমাকে ব্যবহার করতে চাইলে \nMim লেখে কিছু জিজ্ঞাসা করুন যেমন Mim Ki Koro \n⋆✦⋆⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⋆✦⋆",];
     var rand = tl[Math.floor(Math.random() * tl.length)];
     if (!prompt) return api.sendMessage(`${name}\n ${rand}`, event.threadID, event.messageID);
     const res = await axios.get(`https://www.noobs-api.000.pe/dipto/baby?text=${prompt}`);
