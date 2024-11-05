@@ -32,17 +32,17 @@ MESSENGER
 m.me/100001381266797"
 
 WHATSAPP
-wa.me/+8801782721761"
+wa.me/+8801715559179"
 
-<img align="center" src="https://i.imgur.com/fpHVQjf.jpeg"/>
-
-
-🔹MOHAMMAD BADOL CHOWDHURY 
+<img align="center" src="https://i.imgur.com/EkmNZ6I.jpeg"/>
 
 
-# Editing BY MOHAMMAD BADOL CHOWDHURY
+🔹 RAJA CHOWDHURY 
 
-# BADOL-BOT-PACK-SUPPER-ROBOT REAL OWNER BADOL CHOWDHURY
+
+# Editing BY RAJA CHOWDHURY
+
+# RAJA-BOT-PACK-SUPPER-ROBOT REAL OWNER RAJA CHOWDHURY
 
 # Everyone run this BADOL-BOT-007 for fun
 
