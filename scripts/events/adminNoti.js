@@ -64,7 +64,7 @@ module.exports.run = async function({ event, api, Threads, Users }) {
         const preIcon = JSON.parse(fs.readFileSync(iconPath));
         dataThread.threadIcon = logMessageData.thread_icon || "👍";
         if (global.configModule[this.config.name].sendNoti) {
-          api.sendMessage(`[ GROUP UPDATE ]\n❯ ${logMessageBody.replace("emoji", "icon")}\n❯ Original Emoji: ${preIcon[threadID] || "unknown"}`, threadID, async (error, info) => {
+          api.sendMessage(`[ 𝐆𝐑𝐎𝐔𝐏 𝐔𝐏𝐃𝐀𝐓𝐄 ]\n❯ ${logMessageBody.replace("emoji", "icon")}\n❯ Original Emoji: ${preIcon[threadID] || "unknown"}`, threadID, async (error, info) => {
             preIcon[threadID] = dataThread.threadIcon;
             fs.writeFileSync(iconPath, JSON.stringify(preIcon));
             if (global.configModule[this.config.name].autoUnsend) {
@@ -78,14 +78,14 @@ module.exports.run = async function({ event, api, Threads, Users }) {
       case "log:thread-call": {
         if (logMessageData.event === "group_call_started") {
           const name = await Users.getNameUser(logMessageData.caller_id);
-          api.sendMessage(`[ GROUP UPDATE ]\n❯ ${name} STARTED A ${(logMessageData.video) ? 'VIDEO ' : ''}CALL.`, threadID);
+          api.sendMessage(`[ 𝐆𝐑𝐎𝐔𝐏 𝐔𝐏𝐃𝐀𝐓𝐄 ]\n❯ ${name} 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 𝐀 ${(logMessageData.video) ? '𝐕𝐈𝐃𝐄𝐎 ' : ''}𝐂𝐀𝐋𝐋.`, threadID);
         } else if (logMessageData.event === "group_call_ended") {
           const callDuration = logMessageData.call_duration;
           const hours = Math.floor(callDuration / 3600);
           const minutes = Math.floor((callDuration - (hours * 3600)) / 60);
           const seconds = callDuration - (hours * 3600) - (minutes * 60);
           const timeFormat = `${hours}:${minutes}:${seconds}`;
-          api.sendMessage(`[ GROUP UPDATE ]\n❯ ${(logMessageData.video) ? 'Video' : ''} call has ended.\n❯ Call duration: ${timeFormat}`, threadID);
+          api.sendMessage(`[ 𝐆𝐑𝐎𝐔𝐏 𝐔𝐏𝐃𝐀𝐓𝐄 ]\n❯ ${(logMessageData.video) ? '𝐕𝐈𝐃𝐄𝐎' : ''} 𝐂𝐀𝐋𝐋 𝐇𝐀𝐒 𝐄𝐍𝐃𝐄𝐃.\n❯ 𝐂𝐀𝐋𝐋 𝐃𝐔𝐑𝐀𝐓𝐈𝐎𝐍: ${timeFormat}`, threadID);
         } else if (logMessageData.joining_user) {
           const name = await Users.getNameUser(logMessageData.joining_user);
           api.sendMessage(``, threadID);
