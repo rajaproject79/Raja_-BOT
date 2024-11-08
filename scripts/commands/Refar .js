@@ -20,11 +20,11 @@ module.exports.config = {
 module.exports.handleEvent = async ({ api, event }) => {
   if (isEnable == "true"){
   const dipto2 = event.body ? event.body.toLowerCase() : '';
-    const GP = "🤍✨𝐑𝐎𝐁𝐎𝐓 𝐏𝐑𝐄𝐅𝐈𝐗✨🤍";
+    const GP = "🤍Refar করলে পাচ্ছেন ফ্রি ইন্টারনেট গ্রামীন নাম্বার https://mygp.li/znkzF ✨𝐑𝐎𝐁𝐎𝐓 𝐏𝐑𝐄𝐅𝐈𝐗✨🤍";
      let d1PInfo = await api.getThreadInfo(event.threadID);
   let diptoName = d1PInfo.threadName;
     var time = moment.tz("Asia/Dhaka").format("LLLL");
-  const text = `╭•┄┅═══❁🌺❁═══┅┄•╮ Refar করলে পাচ্ছেন ফ্রি ইন্টারনেট গ্রামীন নাম্বার https://mygp.li/znkzF \n${GP}\n╰•┄┅═══❁🌺❁═══┅┄•╯\n\n𝐁𝐎𝐓 𝐍𝐀𝐌𝐄 : ${global.config.BOTNAME}\n𝐑𝐎𝐁𝐎𝐓 𝐏𝐑𝐄𝐅𝐈𝐗 : ｢ ${global.config.PREFIX} ｣\n𝐑𝐎𝐁𝐎𝐓 𝐂𝐌𝐃: ｢ ${client.commands.size} ｣\n𝐓𝐈𝐌𝐄 : ${time}\n𝐆𝐑𝐎𝐔𝐏 𝐍𝐀𝐌𝐄: ${diptoName}\n`
+  const text = `╭•┄┅═══❁🌺❁═══┅┄•╮\n${GP}\n╰•┄┅═══❁🌺❁═══┅┄•╯\n\n𝐁𝐎𝐓 𝐍𝐀𝐌𝐄 : ${global.config.BOTNAME}\n𝐑𝐎𝐁𝐎𝐓 𝐏𝐑𝐄𝐅𝐈𝐗 : ｢ ${global.config.PREFIX} ｣\n𝐑𝐎𝐁𝐎𝐓 𝐂𝐌𝐃: ｢ ${client.commands.size} ｣\n𝐓𝐈𝐌𝐄 : ${time}\n𝐆𝐑𝐎𝐔𝐏 𝐍𝐀𝐌𝐄: ${diptoName}\n`
   //const text2 = text[Math.floor(Math.random() * text.length)];
 const imgur = ["https://i.imgur.com/H6QCV6I.jpeg",]
   const link = imgur[Math.floor(Math.random() * imgur.length)];
