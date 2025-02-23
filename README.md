@@ -2,7 +2,7 @@
   <img src="https://i.imgur.com/mhZbqG3.jpeg" width="50" style="margin-right: 10px;"></a>
 </p>
 <h5 align="center">
-🔹MOHAMMAD RAJA CHOWDHURY
+🔹RS RAJA CHOWDHURY
 
 
 - [📝 **Note**](#-note)
