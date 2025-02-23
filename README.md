@@ -22,14 +22,12 @@
 - 
 BOT-OWNER-CONTEG"
 
- FACEBOK
-https://www.facebook.com/RajaFarjan01882913768"
+ FACEBOKhttps://www.facebook.com/RAJA.ADIBA09638357510"
 
-FACEBOK
-https://www.facebook.com/RajaFarjan01882913768"
+FACEBOKhttps://www.facebook.com/RAJA.ADIBA09638357510"
 
 MESSENGER
-m.me/RAJAMIM09638357510"
+m.me/RAJA.ADIBA09638357510"
 
 WHATSAPP
 wa.me/+8801715559179"
@@ -42,13 +40,13 @@ wa.me/+8801715559179"
 
 # Editing BY RAJA CHOWDHURY
 
-# RAJA-BOT-PACK-SUPPER-ROBOT REAL OWNER RAJA CHOWDHURY
+# RAJA-BOT-PACK-SUPPER-ROBOT REAL OWNER RS RAJA CHOWDHURY
 
 # Everyone run this RAJA-BOT-007 for fun
 
 # If there is any error, I will fix it by knocking on Facebook
 
-# https://www.facebook.com/RajaFarjan01882913768
+# https://www.facebook.com/RAJA.ADIBA09638357510
 
 # I hope you enjoy
 
